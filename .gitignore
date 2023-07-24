@@ -1,2 +1,8 @@
+.venv
 venv
-db.sqllite3
+*.log
+*.pot
+*.pyc
+__pycache__
+db.sqlite3
+media

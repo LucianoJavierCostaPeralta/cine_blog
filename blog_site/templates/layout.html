@@ -5,6 +5,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="{% static 'logo/blog.ico' %}"
+    />
+
     <!--font family | Roboto-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -34,7 +40,9 @@
     <header class="fixed-top">
       <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
         <div class="container">
-          <a class="navbar-brand" href="/">Blog CIne</a>
+          <a class="navbar-brand" href="/">
+            <img src="{% static 'logo/logo.png'%}" alt="logo" />
+          </a>
           <button
             class="navbar-toggler"
             type="button"
@@ -66,35 +74,51 @@
     <footer class="bg-dark text-light">
       <div class="container py-3">
         <div class="row">
-          <div class="col-md-4">
-            <h5>Sobre nosotros</h5>
+          <div class="col-md-6 col-12">
+            <a href="/">
+              <img
+                src="{% static 'logo/logo.png'%}"
+                alt=""
+                style="width: 5rem"
+              />
+            </a>
+          </div>
+          <div class="col-md-6 social col-12">
+            <div class="d-flex flex-column">
+              <h3>Siguenos</h3>
+              <ul class="list-unstyled d-flex gap-3">
+                <li>
+                  <a href="#">
+                    <img src="{% static 'logo/facebook.png'%}" alt="Facebook" />
+                    Facebook</a
+                  >
+                </li>
+                <li>
+                  <a href="#">
+                    <img src="{% static 'logo/twitter.png'%}" alt="Facebook" />
+                    Facebook</a
+                  >
+                </li>
+                <li>
+                  <a href="#">
+                    <img
+                      src="{% static 'logo/instagram.png'%}"
+                      alt="Instagram"
+                    />
+                    Facebook</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-12 mt-4">
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae
-              est velit.
+              &copy; 2023 <strong>Cine Blog</strong>. Todos los derechos
+              reservados. | Diseño por
+              <a href="url_del_diseñador" class="text-muted"
+                >Nombre del Diseñador</a
+              >
             </p>
-          </div>
-          <div class="col-md-4">
-            <h5>Categorías</h5>
-            <ul class="list-unstyled">
-              <li><a href="#">Películas de acción</a></li>
-              <li><a href="#">Películas de drama</a></li>
-              <li><a href="#">Películas de suspenso</a></li>
-              <li><a href="#">Películas de comedia</a></li>
-            </ul>
-          </div>
-          <div class="col-md-4">
-            <h5>Síguenos</h5>
-            <ul class="list-unstyled">
-              <li>
-                <a href="#"><i class="fab fa-facebook"></i> Facebook</a>
-              </li>
-              <li>
-                <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
-              </li>
-              <li>
-                <a href="#"><i class="fab fa-twitter"></i> Twitter</a>
-              </li>
-            </ul>
           </div>
         </div>
       </div>

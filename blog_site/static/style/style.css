@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   font-family: "Roboto", sans-serif;
+  list-style-type: none;
 }
 
 body {
@@ -22,6 +23,19 @@ main {
   color: #13a4a4;
 }
 
+footer a {
+  text-decoration: none;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+footer a:hover {
+  color: #13a4a4;
+  text-decoration: underline;
+}
+
 /* Media query para aplicar estilos solo en pantallas de escritorio */
 @media (max-width: 993px) {
   .active a {
@@ -32,5 +46,14 @@ main {
   .nav-link:hover {
     background: #13a4a4;
     color: #fff;
+  }
+  footer ul {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 763px) {
+  footer .social {
+    margin-top: 15px;
   }
 }

@@ -1,4 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
 body {
-  background: #131313;
+  background: #333;
   color: #fff;
+  font-size: 20px;
+}
+
+main {
+  margin-top: 35px;
+  padding-top: 35px;
+}
+
+.active a {
+  color: #13a4a4;
+}
+.nav-link:hover {
+  color: #13a4a4;
+}
+
+/* Media query para aplicar estilos solo en pantallas de escritorio */
+@media (max-width: 993px) {
+  .active a {
+    background: #13a4a4;
+    color: #fff;
+  }
+
+  .nav-link:hover {
+    background: #13a4a4;
+    color: #fff;
+  }
 }

@@ -1,5 +1,8 @@
-{% extends 'layout.html' %} {% block content %}
+{% extends 'layout.html' %} {% block content %} {% for article in articles %}
+<div>
+  <h2>{{article.title}}</h2>
+  <h2>{{article.description}}</h2>
+  <h2>{{article.content}}</h2>
+</div>
 
-<h1>Home</h1>
-
-{% endblock content %}
+{% endfor %} {% endblock content %}

@@ -10,7 +10,7 @@ class User(models.Model):
     user_password = models.CharField(max_length=50)
     online_status = models.BooleanField(default=False)
     creation_date = models.DateField(auto_now_add=True)
-    user_avatar = models.ImageField(upload_to ='uploads/user_avatars')
+    user_avatar = models.ImageField(upload_to ='uploads/user_avatars/')
     visitor_status = models.BooleanField(default=False)
     collaborator_status = models.BooleanField(default=False)
 
@@ -24,6 +24,7 @@ class Article(models.Model):
     content = models.TextField()
     last_edit = models.DateField(auto_now=True)
     upload_status = models.BooleanField(default=False)
+    lmage = models.ImageField(upload_to ='uploads/assets/')
 
 class Comments(models.Model):
     comment_id = models.BigAutoField(primary_key=True)

@@ -62,16 +62,25 @@
               <li class="nav-item">
                 <a class="nav-link" href="/nosotros">Nosotros</a>
               </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="/signup">Signup</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/signin">SignIn</a>
+              </li>
             </ul>
           </div>
         </div>
       </nav>
     </header>
     <!--main-->
-    <main class="container">{% block content %}{% endblock content %}</main>
+    <main class="container py-5 my-3">
+      {% block content %}{% endblock content %}
+    </main>
 
     <!--footer-->
-    <footer class="bg-dark text-light">
+    <footer class="bg-dark text-light" id="main-footer">
       <div class="container py-3">
         <div class="row">
           <div class="col-md-6 col-12">

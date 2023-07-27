@@ -1,3 +1,15 @@
+/* Variables */
+:root {
+  --main-bg-color: #333;
+  --main-text-color: #fff;
+  --main-hover-color: #13a4a4;
+  --form-bg-color: #131313;
+  --button-bg-color: #0e7b7b;
+  --button-hover-color: #13a4a4;
+  --box-shadow-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Reset y estilos generales */
 * {
   margin: 0;
   padding: 0;
@@ -6,47 +18,60 @@
 }
 
 body {
-  background: #333;
-  color: #fff;
+  background: var(--main-bg-color);
+  color: var(--main-text-color);
   font-size: 20px;
 }
 
-main {
-  margin-top: 35px;
-  padding-top: 35px;
+.active a,
+.nav-link:hover {
+  color: var(--main-hover-color);
 }
 
-.active a {
-  color: #13a4a4;
-}
-.nav-link:hover {
-  color: #13a4a4;
-}
+/* Footer */
 
 footer a {
   text-decoration: none;
-  color: #fff;
+  color: var(--main-text-color);
   display: flex;
   align-items: center;
-  gap: 10px;
+  /* gap: 10px; Remove this line */
 }
 
 footer a:hover {
-  color: #13a4a4;
+  color: var(--main-hover-color);
   text-decoration: underline;
+}
+
+footer ul {
+  display: flex;
+}
+
+/* Formulario */
+.form {
+  background: var(--form-bg-color);
+  padding: 40px;
+  border-radius: 0 0 40px 0;
+  box-shadow: 0 4px 8px var(--box-shadow-color);
+}
+
+.form button {
+  background: var(--button-bg-color);
+  color: #fff;
+}
+
+.form button:hover {
+  background: var(--button-hover-color);
 }
 
 /* Media query para aplicar estilos solo en pantallas de escritorio */
 @media (max-width: 993px) {
-  .active a {
-    background: #13a4a4;
-    color: #fff;
+  .active a,
+  .nav-link:hover {
+    background: var(--main-hover-color);
+    color: var(--main-text-color);
   }
 
-  .nav-link:hover {
-    background: #13a4a4;
-    color: #fff;
-  }
   footer ul {
     flex-direction: column;
   }

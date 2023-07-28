@@ -2,8 +2,10 @@
 
 <div class="row justify-content-center my-5">
   <div class="col-md-4 form">
+    {% csrf_token %}
+    
     <h2>Sign In</h2>
-    <form class="d-flex flex-column gap-4">
+    <form class="d-flex flex-column gap-4" method='POSTs'>
       <div class="form-group">
         <label for="username">Username</label>
         <input

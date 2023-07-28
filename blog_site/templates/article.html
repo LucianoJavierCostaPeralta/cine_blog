@@ -1,0 +1,15 @@
+{% extends 'layout.html' %} {% block content %}
+
+<div class="d-flex flex-column gap-4 my-4">
+  <img
+    src="{{article.image.url}}"
+    class="my-3 img-fluid rounded d-block object-fit-cover"
+    alt="{{article.title}}"
+  />
+
+  <h1>{{article.title}}</h1>
+
+  <div>{{article.content | safe}}</div>
+</div>
+
+{% endblock content %}

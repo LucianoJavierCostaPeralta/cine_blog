@@ -14,6 +14,9 @@ urlpatterns = [
     path('signin/', views.signin, name="signin"),
 
     #articules
+    path('articulos/', views.articles, name="articles"),
+    path('articulos/<int:article_id>/', views.article, name="article"),
+
 ]
 
 # Serving media files during development

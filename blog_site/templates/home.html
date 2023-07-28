@@ -1,11 +1,5 @@
-{% extends 'layout.html' %} 
-{% block content %} 
-  {% for article in articles %}
-    <div>
-      <h2>{{article.title}}</h2>
-      <h2>{{article.description}}</h2>
-      <h2>{{article.content}}</h2>
-      <img src="{{ article.image.url }}" >
-    </div>
-  {% endfor %} 
+{% extends 'layout.html' %} {% block content %}
+
+<h1>Blog Cine</h1>
+
 {% endblock content %}

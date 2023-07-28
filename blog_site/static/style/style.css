@@ -47,6 +47,28 @@ footer ul {
   display: flex;
 }
 
+.card-primary {
+  background: var(--form-bg-color);
+  color: var(--main-text-color);
+  padding: 0;
+  border-radius: 0 0 40px 0;
+  box-shadow: 0 4px 8px var(--box-shadow-color);
+}
+
+.card-primary a {
+  text-decoration: none;
+  padding: 10px 0;
+  background: var(--button-bg-color);
+  color: #fff;
+  border-radius: 0 0 40px 0;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.card-primary a:hover {
+  background: var(--button-hover-color);
+}
+
 /* Formulario */
 .form {
   background: var(--form-bg-color);
@@ -58,6 +80,7 @@ footer ul {
 .form button {
   background: var(--button-bg-color);
   color: #fff;
+  font-weight: 400;
 }
 
 .form button:hover {
